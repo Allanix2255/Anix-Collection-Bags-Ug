@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Collection - ANIX Luxury Handbags</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-horizontal.svg" alt="ANIX Luxury Handbags" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html" class="active">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-icons">
+                    <span class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></span>
+                    <span class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html" class="active">Collection</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="payment-methods.html">Payment Methods</a></li>
+        </ul>
+    </div>
+
+    <!-- Collection Hero -->
+    <section class="collection-hero">
+        <div class="container">
+            <h1 class="page-title">Our Collection</h1>
+            <p class="page-subtitle">Discover the finest luxury handbags crafted with exceptional attention to detail</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="modern">Modern</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="limited">Limited Edition</button>
+            </div>
+            <div class="sort-controls">
+                <select class="sort-select">
+                    <option value="name">Sort by Name</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Grid -->
+    <section class="collection-main">
+        <div class="container">
+            <div class="collection-grid-full">
+                <div class="product-card" data-category="classic" data-price="10450000" onclick="showProductDetails(1)">
+                    <div class="product-image">
+                        <img src="images/handbag1.jpg" alt="ANIX Elegance" class="product-img">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ANIX Elegance</h3>
+                        <p class="product-price">UGX 10,450,000</p>
+                        <p class="product-description">Classic leather handbag with gold hardware</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #8B0000;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #8B4513;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="luxury" data-price="11750000" onclick="showProductDetails(2)">
+                    <div class="product-image">
+                        <img src="images/handbag2.jpg" alt="ANIX Sophistique" class="product-img">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ANIX Sophistique</h3>
+                        <p class="product-price">UGX 11,750,000</p>
+                        <p class="product-description">Premium crocodile leather with silver accents</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #2F4F4F;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="limited" data-price="15050000" onclick="showProductDetails(3)">
+                    <div class="product-image">
+                        <img src="images/handbag3.jpg" alt="ANIX Luxuria" class="product-img">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="limited-badge">Limited Edition</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ANIX Luxuria</h3>
+                        <p class="product-price">UGX 15,050,000</p>
+                        <p class="product-description">Limited edition with diamond clasp</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #8B0000;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="modern" data-price="9720000" onclick="showProductDetails(4)">
+                    <div class="product-image">
+                        <img src="images/handbag4.jpg" alt="ANIX Moderne" class="product-img">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ANIX Moderne</h3>
+                        <p class="product-price">UGX 9,720,000</p>
+                        <p class="product-description">Contemporary design with minimalist appeal</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #8B4513;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #FFFFFF; border: 1px solid #ccc;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="luxury" data-price="20200000" onclick="showProductDetails(5)">
+                    <div class="product-image">
+                        <img src="images/handbag5.jpg" alt="ANIX Royale" class="product-img">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ANIX Royale</h3>
+                        <p class="product-price">UGX 20,200,000</p>
+                        <p class="product-description">Exclusive python leather with 24k gold details</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #FFD700;"></span>
+                            <span class="color-dot" style="background: #8B4513;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="classic" data-price="10830000" onclick="showProductDetails(6)">
+                    <div class="product-image">
+                        <img src="images/handbag6.jpg" alt="ANIX Classique" class="product-img">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ANIX Classique</h3>
+                        <p class="product-price">UGX 10,830,000</p>
+                        <p class="product-description">Timeless design in premium Italian leather</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #FFFFFF; border: 1px solid #ccc;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #8B4513;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Features -->
+    <section class="collection-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Artisan Crafted</h3>
+                    <p>Each handbag is meticulously handcrafted by master artisans with decades of experience</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Premium Materials</h3>
+                    <p>Only the finest leathers and materials sourced from the world's most prestigious suppliers</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Limited Production</h3>
+                    <p>Exclusive collections with limited quantities to ensure uniqueness and exclusivity</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Lifetime Warranty</h3>
+                    <p>Comprehensive warranty and repair services to maintain your investment for years to come</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANIX</h3>
+                    <p>Luxury redefined</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+256752811231">+256 752 811 231</a></li>
+                        <li><a href="tel:+256776811231">+256 776 811 231</a></li>
+                        <li><a href="mailto:anixcollection88@gmail.com">anixcollection88@gmail.com</a></li>
+                        <li>Muyenga Hill 22, Kampala</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://wa.me/256752811231" target="_blank">WhatsApp</a></li>
+                        <li><a href="payment-methods.html">Payment Methods</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/256752811231" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANIX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <h2>Search ANIX Collection</h2>
+                <span class="search-close" onclick="toggleSearch()">&times;</span>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Search for handbags, styles, colors..." autocomplete="off">
+                <i class="fas fa-search search-input-icon"></i>
+            </div>
+            <div class="search-filters">
+                <button class="search-filter-btn active" data-filter="all">All</button>
+                <button class="search-filter-btn" data-filter="classic">Classic</button>
+                <button class="search-filter-btn" data-filter="modern">Modern</button>
+                <button class="search-filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <span class="cart-close" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-content">
+            <div id="cartItems" class="cart-items">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Your cart is empty</p>
+                    <p class="empty-cart-subtitle">Add some luxury handbags to get started</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <div class="total-line">
+                        <span>Subtotal:</span>
+                        <span id="cartSubtotal">UGX 0</span>
+                    </div>
+                    <div class="total-line">
+                        <span>Shipping:</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="total-line total-final">
+                        <span>Total:</span>
+                        <span id="cartTotal">UGX 0</span>
+                    </div>
+                </div>
+                <button class="checkout-btn" onclick="proceedToCheckout()">
+                    <i class="fas fa-lock"></i> Secure Checkout
+                </button>
+                <button class="continue-shopping-btn" onclick="toggleCart()">
+                    Continue Shopping
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cartOverlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="cart.js"></script>
+    <script src="collection.js"></script>
+</body>
+</html>

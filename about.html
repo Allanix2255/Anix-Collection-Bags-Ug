@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>About - ANIX Luxury Handbags</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-horizontal.svg" alt="ANIX Luxury Handbags" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-icons">
+                    <span class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></span>
+                    <span class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="payment-methods.html">Payment Methods</a></li>
+        </ul>
+    </div>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="page-title">About ANIX</h1>
+                <p class="page-subtitle">Where luxury meets artistry, and tradition embraces innovation</p>
+            </div>
+            <div class="about-hero-image">
+                <img src="images/hero-handbag.jpg" alt="ANIX Craftsmanship" class="about-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in the heart of Milan in 1985, ANIX began as a small atelier with a singular vision: to create handbags that transcend mere accessories and become timeless works of art. Our founder, Isabella Marchetti, was inspired by the rich tradition of Italian leather craftsmanship and the desire to create pieces that would be treasured for generations.</p>
+                    
+                    <p>What started as a passion project in a small workshop has evolved into one of the world's most prestigious luxury handbag brands. Yet, despite our growth, we have never forgotten our roots. Every ANIX handbag is still crafted with the same attention to detail, the same commitment to excellence, and the same love for the craft that Isabella instilled from the very beginning.</p>
+                    
+                    <p>Today, ANIX represents the pinnacle of luxury handbag design, combining traditional Italian craftsmanship with contemporary innovation. Our pieces are coveted by discerning women worldwide who appreciate the finest things in life.</p>
+                </div>
+                <div class="story-stats">
+                    <div class="stat-item">
+                        <h3>39</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Master Artisans</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Handcrafted</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>25</h3>
+                        <p>Countries Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship -->
+    <section class="craftsmanship">
+        <div class="container">
+            <h2 class="section-title">The Art of Craftsmanship</h2>
+            <div class="craftsmanship-grid">
+                <div class="craft-step">
+                    <div class="step-number">01</div>
+                    <h3>Material Selection</h3>
+                    <p>We source only the finest leathers from renowned tanneries in Italy and France. Each hide is carefully inspected and selected for its quality, texture, and natural beauty.</p>
+                </div>
+                <div class="craft-step">
+                    <div class="step-number">02</div>
+                    <h3>Pattern Creation</h3>
+                    <p>Our master pattern makers create precise templates that ensure perfect proportions and optimal use of materials. Each pattern is a work of art in itself.</p>
+                </div>
+                <div class="craft-step">
+                    <div class="step-number">03</div>
+                    <h3>Hand Cutting</h3>
+                    <p>Skilled artisans hand-cut each piece with precision, ensuring that the grain and texture of the leather are perfectly aligned for maximum beauty and durability.</p>
+                </div>
+                <div class="craft-step">
+                    <div class="step-number">04</div>
+                    <h3>Expert Stitching</h3>
+                    <p>Using traditional saddle-stitching techniques, our craftsmen create seams that are not only beautiful but will last a lifetime. Each stitch is placed with meticulous care.</p>
+                </div>
+                <div class="craft-step">
+                    <div class="step-number">05</div>
+                    <h3>Hardware Assembly</h3>
+                    <p>Premium hardware, often plated in gold or crafted from sterling silver, is carefully attached using time-honored techniques that ensure both beauty and functionality.</p>
+                </div>
+                <div class="craft-step">
+                    <div class="step-number">06</div>
+                    <h3>Final Inspection</h3>
+                    <p>Every handbag undergoes rigorous quality control. Only pieces that meet our exacting standards bear the ANIX name and are worthy of our customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Sustainability</h3>
+                    <p>We are committed to responsible sourcing and sustainable practices. Our leathers come from ethically managed farms, and we continuously work to minimize our environmental impact.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h3>Artisan Heritage</h3>
+                    <p>We preserve traditional craftsmanship techniques while providing our artisans with fair wages and excellent working conditions. Their skill and dedication are the heart of our brand.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>We never compromise on quality. From the selection of materials to the final stitch, every aspect of our handbags reflects our commitment to excellence.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Timeless Design</h3>
+                    <p>Our designs transcend fleeting trends. We create pieces that will be as beautiful and relevant decades from now as they are today.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">IM</div>
+                    </div>
+                    <h3>Isabella Marchetti</h3>
+                    <p class="member-title">Founder & Creative Director</p>
+                    <p class="member-bio">With over 40 years in luxury fashion, Isabella continues to guide ANIX's creative vision with passion and expertise.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">MR</div>
+                    </div>
+                    <h3>Marco Rossi</h3>
+                    <p class="member-title">Master Craftsman</p>
+                    <p class="member-bio">A third-generation leather artisan, Marco leads our workshop with unparalleled skill and dedication to traditional techniques.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">SF</div>
+                    </div>
+                    <h3>Sofia Ferrari</h3>
+                    <p class="member-title">Head of Design</p>
+                    <p class="member-bio">Sofia brings fresh perspectives to classic designs, ensuring ANIX remains at the forefront of luxury fashion.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">LC</div>
+                    </div>
+                    <h3>Lorenzo Conti</h3>
+                    <p class="member-title">Quality Director</p>
+                    <p class="member-bio">Lorenzo's meticulous attention to detail ensures that every ANIX handbag meets our exacting standards of excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="awards">
+        <div class="container">
+            <h2 class="section-title">Recognition & Awards</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-year">2023</div>
+                    <h3>Luxury Brand of the Year</h3>
+                    <p>International Luxury Fashion Awards</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2022</div>
+                    <h3>Best Craftsmanship</h3>
+                    <p>Milan Fashion Week Excellence Awards</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2021</div>
+                    <h3>Sustainable Luxury Leader</h3>
+                    <p>Global Fashion Sustainability Council</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2020</div>
+                    <h3>Heritage Brand Recognition</h3>
+                    <p>Italian Chamber of Fashion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANIX</h3>
+                    <p>Luxury redefined</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+256752811231">+256 752 811 231</a></li>
+                        <li><a href="tel:+256776811231">+256 776 811 231</a></li>
+                        <li><a href="mailto:anixcollection88@gmail.com">anixcollection88@gmail.com</a></li>
+                        <li>Muyenga Hill 22, Kampala</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://wa.me/256752811231" target="_blank">WhatsApp</a></li>
+                        <li><a href="payment-methods.html">Payment Methods</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/256752811231" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANIX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

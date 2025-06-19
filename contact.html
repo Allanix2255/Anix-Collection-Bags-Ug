@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Contact - ANIX Luxury Handbags</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-horizontal.svg" alt="ANIX Luxury Handbags" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-icons">
+                    <span class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></span>
+                    <span class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="payment-methods.html">Payment Methods</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We're here to assist you with your luxury handbag needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you have questions about our collection, need styling advice, or require assistance with your order, our team is here to help.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="product">Product Information</option>
+                                <option value="order">Order Status</option>
+                                <option value="styling">Personal Styling</option>
+                                <option value="care">Care Instructions</option>
+                                <option value="repair">Repair Services</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please share your inquiry or message..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I would like to receive updates about new collections and exclusive offers</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Visit Our Boutique</h2>
+
+                    <div class="boutique-info">
+                        <h3>ANIX Kampala Flagship Store</h3>
+                        <div class="boutique-details">
+                            <p><strong>Address:</strong><br>
+                            Muyenga Hill 22<br>
+                            Kampala, Uganda</p>
+
+                            <p><strong>Phone:</strong><br>
+                            <a href="tel:+256752811231" class="phone-link">+256 752 811 231</a><br>
+                            <a href="tel:+256776811231" class="phone-link">+256 776 811 231</a></p>
+
+                            <p><strong>WhatsApp:</strong><br>
+                            <a href="https://wa.me/256752811231" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> +256 752 811 231
+                            </a><br>
+                            <a href="https://wa.me/256776811231" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> +256 776 811 231
+                            </a></p>
+
+                            <p><strong>Email:</strong><br>
+                            <a href="mailto:anixcollection88@gmail.com" class="email-link">anixcollection88@gmail.com</a></p>
+
+                            <p><strong>Hours:</strong><br>
+                            Monday - Saturday: 9:00 AM - 7:00 PM<br>
+                            Sunday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="boutique-info">
+                        <h3>Quick Contact</h3>
+                        <div class="boutique-details">
+                            <div class="quick-contact-buttons">
+                                <a href="https://wa.me/256752811231?text=Hello%20ANIX,%20I'm%20interested%20in%20your%20luxury%20handbag%20collection" target="_blank" class="contact-btn whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                                </a>
+                                <a href="tel:+256752811231" class="contact-btn call-btn">
+                                    <i class="fas fa-phone"></i> Call Now
+                                </a>
+                                <a href="mailto:anixcollection88@gmail.com?subject=Inquiry%20about%20ANIX%20Handbags" class="contact-btn email-btn">
+                                    <i class="fas fa-envelope"></i> Email Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boutique-info">
+                        <h3>Location Map</h3>
+                        <div class="boutique-details">
+                            <p>Located in the prestigious Muyenga Hill area, our flagship store offers a luxurious shopping experience in the heart of Kampala.</p>
+                            <div class="map-placeholder">
+                                <p style="text-align: center; color: #666; font-style: italic;">
+                                    <i class="fas fa-map-marker-alt"></i> Muyenga Hill 22, Kampala<br>
+                                    <small>Easy access via Ggaba Road</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3>Personal Shopping</h3>
+                    <p>Our expert stylists provide personalized consultations to help you find the perfect handbag for any occasion.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Repair & Restoration</h3>
+                    <p>Professional repair services to maintain and restore your ANIX handbags to their original beauty.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-gift"></i></div>
+                    <h3>Custom Orders</h3>
+                    <p>Create a truly unique piece with our bespoke service, tailored to your specific preferences and requirements.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3>Worldwide Delivery</h3>
+                    <p>Secure, insured shipping to over 50 countries with white-glove delivery service for your precious purchases.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+                    <h3>Flexible Payment</h3>
+                    <p>Multiple payment options including installment plans to make luxury more accessible.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Authentication</h3>
+                    <p>Certificate of authenticity with every purchase, ensuring the genuineness of your investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How long does shipping take?</h3>
+                    <div class="faq-answer">
+                        <p>Standard shipping takes 3-5 business days within the US and 7-10 business days internationally. Express shipping options are available for faster delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What is your return policy?</h3>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for unused items in original condition. Custom orders are final sale. Please contact us for return authorization.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer repair services?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive repair and restoration services for all ANIX handbags. Contact us for a consultation and quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I care for my ANIX handbag?</h3>
+                    <div class="faq-answer">
+                        <p>Each handbag comes with detailed care instructions. Generally, store in the provided dust bag, avoid excessive moisture, and use leather conditioner as recommended.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I schedule a private appointment?</h3>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer private shopping appointments at all our boutiques. Contact us to schedule your personalized experience.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer wholesale pricing?</h3>
+                    <div class="faq-answer">
+                        <p>We work with select retail partners. Please contact our wholesale department for information about becoming an authorized retailer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANIX</h3>
+                    <p>Luxury redefined</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+256752811231">+256 752 811 231</a></li>
+                        <li><a href="tel:+256776811231">+256 776 811 231</a></li>
+                        <li><a href="mailto:anixcollection88@gmail.com">anixcollection88@gmail.com</a></li>
+                        <li>Muyenga Hill 22, Kampala</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://wa.me/256752811231" target="_blank">WhatsApp</a></li>
+                        <li><a href="payment-methods.html">Payment Methods</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/256752811231" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANIX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="cart.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

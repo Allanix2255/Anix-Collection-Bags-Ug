@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Payment Methods - ANIX Luxury Handbags</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo-horizontal.svg" alt="ANIX Luxury Handbags" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-icons">
+                    <span class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></span>
+                    <span class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="payment-methods.html" class="active">Payment Methods</a></li>
+        </ul>
+    </div>
+
+    <!-- Payment Methods Hero -->
+    <section class="payment-hero">
+        <div class="container">
+            <h1 class="page-title">Payment Methods</h1>
+            <p class="page-subtitle">Multiple secure payment options for your convenience</p>
+        </div>
+    </section>
+
+    <!-- Payment Methods Main -->
+    <section class="payment-methods-main">
+        <div class="container">
+            <div class="payment-methods-grid">
+                <!-- Cash Payment -->
+                <div class="payment-method-card">
+                    <div class="payment-card-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cash Payment</h3>
+                    <p class="payment-description">Pay in cash upon delivery or at our boutique</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> Cash on delivery available</li>
+                        <li><i class="fas fa-check"></i> Store pickup payment</li>
+                        <li><i class="fas fa-check"></i> No processing fees</li>
+                        <li><i class="fas fa-check"></i> Available in Kampala area</li>
+                    </ul>
+                    <div class="payment-availability">
+                        <span class="availability-badge available">Available</span>
+                    </div>
+                </div>
+
+                <!-- Bank Transfer -->
+                <div class="payment-method-card">
+                    <div class="payment-card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bank Transfer</h3>
+                    <p class="payment-description">Direct transfer to our Stanbic Bank account</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> Secure bank-to-bank transfer</li>
+                        <li><i class="fas fa-check"></i> Local and international transfers</li>
+                        <li><i class="fas fa-check"></i> Swift code available</li>
+                        <li><i class="fas fa-check"></i> 24/7 processing</li>
+                    </ul>
+                    <div class="payment-availability">
+                        <span class="availability-badge available">Available</span>
+                    </div>
+                </div>
+
+                <!-- Debit/Credit Cards -->
+                <div class="payment-method-card">
+                    <div class="payment-card-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Debit/Credit Cards</h3>
+                    <p class="payment-description">Visa, Mastercard, and local bank cards</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> Visa & Mastercard accepted</li>
+                        <li><i class="fas fa-check"></i> Local Ugandan bank cards</li>
+                        <li><i class="fas fa-check"></i> 3D Secure authentication</li>
+                        <li><i class="fas fa-check"></i> SSL encrypted transactions</li>
+                    </ul>
+                    <div class="payment-availability">
+                        <span class="availability-badge available">Available</span>
+                    </div>
+                </div>
+
+                <!-- PayPal -->
+                <div class="payment-method-card">
+                    <div class="payment-card-icon">
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <h3>PayPal</h3>
+                    <p class="payment-description">Secure international payments via PayPal</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> Buyer protection included</li>
+                        <li><i class="fas fa-check"></i> No card details shared</li>
+                        <li><i class="fas fa-check"></i> Instant payment confirmation</li>
+                        <li><i class="fas fa-check"></i> International customers</li>
+                    </ul>
+                    <div class="payment-availability">
+                        <span class="availability-badge available">Available</span>
+                    </div>
+                </div>
+
+                <!-- Digital Wallets -->
+                <div class="payment-method-card">
+                    <div class="payment-card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Digital Wallets</h3>
+                    <p class="payment-description">Mobile Money and digital payment solutions</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> MTN Mobile Money</li>
+                        <li><i class="fas fa-check"></i> Airtel Money</li>
+                        <li><i class="fas fa-check"></i> Apple Pay & Google Pay</li>
+                        <li><i class="fas fa-check"></i> Samsung Pay</li>
+                    </ul>
+                    <div class="payment-availability">
+                        <span class="availability-badge available">Available</span>
+                    </div>
+                </div>
+
+                <!-- Gift Cards -->
+                <div class="payment-method-card">
+                    <div class="payment-card-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Gift Cards</h3>
+                    <p class="payment-description">ANIX gift cards and vouchers</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> Physical and digital cards</li>
+                        <li><i class="fas fa-check"></i> Custom amounts available</li>
+                        <li><i class="fas fa-check"></i> Perfect for gifting</li>
+                        <li><i class="fas fa-check"></i> 12-month validity</li>
+                    </ul>
+                    <div class="payment-availability">
+                        <span class="availability-badge available">Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Security -->
+    <section class="payment-security">
+        <div class="container">
+            <h2 class="section-title">Payment Security</h2>
+            <div class="security-features">
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>SSL Encryption</h3>
+                    <p>All transactions are protected with 256-bit SSL encryption</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Processing</h3>
+                    <p>PCI DSS compliant payment processing for maximum security</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Privacy Protected</h3>
+                    <p>Your personal and payment information is never stored or shared</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Verified Transactions</h3>
+                    <p>All payments are verified and confirmed before processing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment FAQ -->
+    <section class="payment-faq">
+        <div class="container">
+            <h2 class="section-title">Payment FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What payment methods do you accept?</h3>
+                    <div class="faq-answer">
+                        <p>We accept cash, bank transfers, debit/credit cards, PayPal, digital wallets (Mobile Money, Apple Pay, Google Pay), and ANIX gift cards.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Is it safe to pay online?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, all online payments are secured with SSL encryption and processed through PCI DSS compliant systems. We never store your payment information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I pay with Mobile Money?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, we accept MTN Mobile Money and Airtel Money. Send payment to our registered numbers and share the transaction ID via WhatsApp.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer installment payments?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible payment plans for purchases above UGX 5,000,000. Contact us to discuss installment options.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I purchase a gift card?</h3>
+                    <div class="faq-answer">
+                        <p>Gift cards can be purchased online or at our store. Contact us via WhatsApp or visit our Muyenga Hill location for gift card purchases.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What if my payment fails?</h3>
+                    <div class="faq-answer">
+                        <p>If your payment fails, please try again or contact us immediately. We'll help resolve any payment issues and ensure your order is processed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ANIX</h3>
+                    <p>Luxury redefined</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+256752811231">+256 752 811 231</a></li>
+                        <li><a href="tel:+256776811231">+256 776 811 231</a></li>
+                        <li><a href="mailto:anixcollection88@gmail.com">anixcollection88@gmail.com</a></li>
+                        <li>Muyenga Hill 22, Kampala</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://wa.me/256752811231" target="_blank">WhatsApp</a></li>
+                        <li><a href="payment-methods.html">Payment Methods</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/256752811231" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ANIX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
